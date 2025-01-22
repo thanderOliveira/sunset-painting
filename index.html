@@ -1,96 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	  <script defer src="/_vercel/insights/script.js"></script>
+	
+    <title>Sunset Painting Services</title>
+    
+	  <meta name="description" content="Transform your space with Sunset Painting Services. We offer expert interior, exterior, and commercial painting solutions. Get a free quote today!">
+    <meta name="keywords" content="painting services, interior painting, exterior painting, commercial painting, professional painters">
+    <meta name="author" content="Sunset Painting Services">
+    
+    <link rel="icon" href="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-21%20at%203.12.42%20PM-QxQrq7WoCwfa4M0EsuIBsK47ziRkru.jpeg">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-01-21%20at%203.12.42%20PM-QxQrq7WoCwfa4M0EsuIBsK47ziRkru.jpeg" alt="Sunset Painting Services Logo"> -->
+                <img src="assets\images\sunset-painting.png" alt="Sunset Painting Services Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-image">
+          <img src="assets/images/roller-painting-gray-wall.jpg" alt="Hero Banner" class="img-fluid">
+          <div class="hero-content">
+              <h1 class="display-4">Sunset Painting Services</h1>
+              <p class="lead">Transform your space with our expert painting solutions</p>
+              <a href="#contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+          </div>
+      </div>
+  </header>  
+
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Services</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-house service-icon mb-3"></i>
+                            <h3 class="card-title">Interior Painting</h3>
+                            <p class="card-text">Transform your indoor spaces with our expert interior painting services.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#interiorModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-tree service-icon mb-3"></i>
+                            <h3 class="card-title">Exterior Painting</h3>
+                            <p class="card-text">Enhance your home's curb appeal with our durable exterior painting.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exteriorModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-building service-icon mb-3"></i>
+                            <h3 class="card-title">Commercial Painting</h3>
+                            <p class="card-text">Professional painting solutions for businesses and commercial properties.</p>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#commercialModal">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Projects</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/placeholder.svg?height=300&width=800" class="d-block w-100" alt="Project 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Residential Repaint</h5>
+                            <p>Complete exterior repaint for a modern look</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/placeholder.svg?height=300&width=800" class="d-block w-100" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Commercial Office</h5>
+                            <p>Interior painting for a local tech startup</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/placeholder.svg?height=300&width=800" class="d-block w-100" alt="Project 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Historic Restoration</h5>
+                            <p>Careful restoration of a 19th-century building</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 bg-light">
+      <div class="container">
+          <h2 class="text-center mb-5">Contact Us</h2>
+          <div class="row">
+              <!-- Contact Information -->
+              <div class="col-md-6 mb-4">
+                  <div class="card h-100 shadow-sm">
+                      <div class="card-body">
+                          <h3 class="card-title">Get in Touch</h3>
+                          <ul class="list-unstyled">
+                              <li class="mb-3">
+                                  <i class="bi bi-telephone me-2"></i> 
+                                  +1 (774) 429-9030
+                              </li>
+                              <li class="mb-3">
+                                  <i class="bi bi-instagram me-2"></i> 
+                                  <a href="https://www.instagram.com/sunsetpaintingservices" target="_blank">Sunset Painting</a>
+                              </li>
+                              <li class="mb-3">
+                                  <i class="bi bi-envelope text-secondary me-2"></i> 
+                                  <a href="mailto:sunsetpaintingsinc@gmail.com">sunsetpaintingsinc@gmail.com</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Contact Form -->
+              <div class="col-md-6 mb-4">
+                  <div class="card h-100 shadow-sm">
+                      <div class="card-body">
+                          <h3 class="card-title">Request a Quote</h3>
+                          <form>
+                              <div class="mb-3">
+                                  <input type="text" class="form-control" placeholder="Your Name" required>
+                              </div>
+                              <div class="mb-3">
+                                  <input type="email" class="form-control" placeholder="Your Email" required>
+                              </div>
+                              <div class="mb-3">
+                                  <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Sunset Painting Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal fade" id="interiorModal" tabindex="-1" aria-labelledby="interiorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="interiorModalLabel">Interior Painting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our interior painting services include:</p>
+                    <ul>
+                        <li>Color consultation</li>
+                        <li>Surface preparation</li>
+                        <li>Premium paint application</li>
+                        <li>Trim and detail work</li>
+                        <li>Clean-up and final inspection</li>
+                    </ul>
+                    <p>We use low-VOC paints for a healthier indoor environment.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="exteriorModal" tabindex="-1" aria-labelledby="exteriorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exteriorModalLabel">Exterior Painting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our exterior painting services include:</p>
+                    <ul>
+                        <li>Power washing</li>
+                        <li>Scraping and sanding</li>
+                        <li>Priming</li>
+                        <li>Paint application</li>
+                        <li>Weatherproofing</li>
+                    </ul>
+                    <p>We use durable, weather-resistant paints for long-lasting results.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="commercialModal" tabindex="-1" aria-labelledby="commercialModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="commercialModalLabel">Commercial Painting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Our commercial painting services include:</p>
+                    <ul>
+                        <li>Office spaces</li>
+                        <li>Retail stores</li>
+                        <li>Restaurants</li>
+                        <li>Warehouses</li>
+                        <li>Industrial facilities</li>
+                    </ul>
+                    <p>We work around your schedule to minimize disruption to your business.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</body>
 </html>
+
