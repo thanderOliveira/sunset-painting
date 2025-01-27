@@ -1,7 +1,7 @@
 :root {
     --primary-color: #8B1E3F;
     --secondary-color: #E76F51;
-    --background-color: #FFF5EB;
+    --background-color: #f5f5f5;
 }
 
 body {
@@ -21,12 +21,15 @@ body {
 
 .nav-link {
     color: var(--primary-color) !important;
-    font-weight: 500;
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--secondary-color) !important;
+    /* color: var(--secondary-color) !important; */
+    border-style: none;
+    border-radius: 25px;
+    background-color: var(--background-color);
 }
 
 /* .hero {
@@ -38,24 +41,35 @@ body {
     color: var(--primary-color);
 } */
 
-.hero {
+.hero-image {
     position: relative;
-    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
 }
 
-.hero img {
+.hero-image img {
     width: 100%;
     height: auto;
-    object-fit: cover;
+    opacity: 0.8; /* Optional: Slightly dim the image */
+}
+
+.hero-image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for better visibility */
+    z-index: 1;
 }
 
 .hero-content {
     position: absolute;
     top: 50%;
-    left: 5%; /* Adjust for padding */
-    transform: translateY(-50%);
+    left: 10%; /* Adjust to move the content towards the left */
+    transform: translateY(-50%); /* Center vertically */
+    text-align: left; /* Align text to the left */
+    color: white;
     z-index: 2;
-    text-align: left;
 }
 
 .hero-content h1 {
@@ -67,6 +81,11 @@ body {
 .hero-content p {
     font-size: 1.25rem;
     color: var(--background-color); /* Matches h1 */
+}
+
+.hero-content h1,
+.hero-content p {
+    margin-bottom: 20px;
 }
 
 .hero-content a {
