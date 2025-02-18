@@ -122,10 +122,15 @@
   }
   
   h2 {
-    font-size: 1.9rem;
+    font-family: cursive;
+    font-size: 2rem;
     font-weight: bold;
     margin-bottom: 20px;
     color: var(--primary-color);
+  }
+
+  h3 {
+    font-family: cursive;
   }
   
   @media (max-width: 768px) {
@@ -353,6 +358,11 @@
     grid-row: span 2;
 }
 
+.gallery-item.xlarge {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
 /* Responsive adjustments */
 @media (max-width: 992px) {
     .gallery-grid {
@@ -367,8 +377,48 @@
 }
 
 #contact-container {
-    background-image: url('../assets/images/construction-worker-drawing-with-coffee-his-hand.jpg');
-    background-size: cover; /* Ensures the whole image is displayed */
-    background-repeat: no-repeat;
-    border-radius: 10px; 
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.6),
+      transparent 95%
+  ), 
+  url('../assets/images/construction-worker-drawing-with-coffee-his-hand.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  min-height: 500px;
+  z-index: 1;
+}
+
+.card-footer {
+  width: 50%; 
+  margin-top: 40px; 
+  /* padding-left: 40px; */
+  margin-left: 40px;
+}
+
+@media (max-width: 992px) {
+  #contact-container {
+    background-image: none;
+    min-height: auto;
+  }
+
+  .card-footer {
+    width: 100%; 
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-footer {
+  padding: 16px;
+  margin-top: 0; 
+  margin-left: 0;
+}
 }
