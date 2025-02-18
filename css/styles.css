@@ -345,6 +345,17 @@
   
   /* gallery */
   
+  @media (min-width: 768px) { /* Apply only on tablets and larger screens */
+    .gallery-item {
+        transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
   .gallery-grid {
     display: grid;
     gap: 15px;
