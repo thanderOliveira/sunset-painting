@@ -226,6 +226,10 @@
       .lead {
         display: none;
       }
+
+      .promotional-banner-text {
+        text-align: center;
+      }
     }
   }
   
