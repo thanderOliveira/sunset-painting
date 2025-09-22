@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /login/
 Allow: /
 
-Sitemap: https://sunsetpaintingservices.com/sitemap.xml
+Sitemap: https://www.sunsetpaintingservices.com/sitemap.xml
